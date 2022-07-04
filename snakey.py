@@ -188,5 +188,5 @@ class Snake:
 
 if __name__ == '__main__':
     settings = Settings(caption="Snakeyyyy!", icon_name='icon.png',
-                        width=1200, height=1000, bg_color=(220, 240, 235),foodname='panda.png',snake_size=40)
+                        width=1200, height=1000, bg_color=(220, 240, 235),foodname='xjp.png',snake_size=40)
     myGame = Snake(settings)
