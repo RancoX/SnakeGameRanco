@@ -2,3 +2,5 @@ pg_with_tim.py
 /.git
 test.py
 scratch.ipynb
+.gitignore
+/__pycache__
