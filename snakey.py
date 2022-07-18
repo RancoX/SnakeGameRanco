@@ -15,7 +15,7 @@ class Settings:
         self.bg_color = bg_color
         self.caption = caption
         self.icon = pg.image.load(os.path.join(
-            r'F:\Python\Corey Tutorial\Snake', icon_name))
+            os.path.dirname(__file__), icon_name))
         self.head_color=head_color
         self.body_color=body_color
         self.snake_size=snake_size
@@ -23,7 +23,7 @@ class Settings:
         self.direction=(0,-1)  # default direction is set to up
         self.FPS=FPS
         self.food=pg.image.load(os.path.join(
-            r'F:\Python\Corey Tutorial\Snake', foodname))
+            os.path.dirname(__file__), foodname))
 
 
 class Snake:
@@ -188,5 +188,5 @@ class Snake:
 
 if __name__ == '__main__':
     settings = Settings(caption="Snakeyyyy!", icon_name='icon.png',
-                        width=1200, height=1000, bg_color=(220, 240, 235),foodname='xjp.png',snake_size=40)
+                        width=1200, height=1000, bg_color=(220, 240, 235),foodname='xjp.jpg',snake_size=40)
     myGame = Snake(settings)
